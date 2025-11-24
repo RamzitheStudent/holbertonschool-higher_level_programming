@@ -3,7 +3,7 @@
 
 
 def class_to_json(obj):
-    """Returns the dictionary description for JSON serialization."""
+    """Return the dictionary description for JSON serialization."""
     result = {}
 
     for key, value in obj.__dict__.items():
@@ -11,4 +11,3 @@ def class_to_json(obj):
             result[key] = value
 
     return result
-
