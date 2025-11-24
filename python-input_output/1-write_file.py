@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """nothing"""
+
+
 def write_file(filename="", text=""):
     """cavab budur"""
     with open(filename, "w", encoding="utf-8") as f:
