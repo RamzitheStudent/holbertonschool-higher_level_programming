@@ -1,0 +1,1 @@
+adice sozlerdir sadece bunlar.
