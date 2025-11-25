@@ -2,6 +2,7 @@
 class Rectangle:
     """Defines a rectangle with width and height, managed via properties."""
 
+
     def __init__(self, width=0, height=0):
         """
         Initializes a new Rectangle instance.
