@@ -1,0 +1,105 @@
+The ``MyList`` module
+======================
+
+Using ``MyList``
+----------------
+
+Import the class:
+
+    >>> MyList = __import__('1-my_list').MyList
+
+Test 1: Basic functionality
+    >>> my_list = MyList()
+    >>> my_list.append(1)
+    >>> my_list.append(4)
+    >>> my_list.append(2)
+    >>> my_list.append(3)
+    >>> my_list.append(5)
+    >>> print(my_list)
+    [1, 4, 2, 3, 5]
+    >>> my_list.print_sorted()
+    [1, 2, 3, 4, 5]
+    >>> print(my_list)
+    [1, 4, 2, 3, 5]
+
+Test 2: Empty list
+    >>> my_list = MyList()
+    >>> my_list.print_sorted()
+    []
+
+Test 3: Single element
+    >>> my_list = MyList()
+    >>> my_list.append(1)
+    >>> my_list.print_sorted()
+    [1]
+
+Test 4: Negative numbers
+    >>> my_list = MyList()
+    >>> my_list.append(-5)
+    >>> my_list.append(3)
+    >>> my_list.append(-1)
+    >>> my_list.append(0)
+    >>> my_list.print_sorted()
+    [-5, -1, 0, 3]
+
+Test 5: All same numbers
+    >>> my_list = MyList()
+    >>> my_list.append(5)
+    >>> my_list.append(5)
+    >>> my_list.append(5)
+    >>> my_list.print_sorted()
+    [5, 5, 5]
+
+Test 6: Already sorted list
+    >>> my_list = MyList()
+    >>> my_list.append(1)
+    >>> my_list.append(2)
+    >>> my_list.append(3)
+    >>> my_list.print_sorted()
+    [1, 2, 3]
+
+Test 7: Reverse sorted list
+    >>> my_list = MyList()
+    >>> my_list.append(5)
+    >>> my_list.append(4)
+    >>> my_list.append(3)
+    >>> my_list.append(2)
+    >>> my_list.append(1)
+    >>> my_list.print_sorted()
+    [1, 2, 3, 4, 5]
+
+Test 8: Check inheritance
+    >>> my_list = MyList()
+    >>> isinstance(my_list, list)
+    True
+
+Test 9: Initialize with values
+    >>> my_list = MyList([3, 1, 2])
+    >>> my_list.print_sorted()
+    [1, 2, 3]
+    >>> print(my_list)
+    [3, 1, 2]
+
+Test 10: Large numbers
+    >>> my_list = MyList()
+    >>> my_list.append(1000000)
+    >>> my_list.append(1)
+    >>> my_list.append(500000)
+    >>> my_list.print_sorted()
+    [1, 500000, 1000000]
+
+Test 11: Two elements
+    >>> my_list = MyList()
+    >>> my_list.append(2)
+    >>> my_list.append(1)
+    >>> my_list.print_sorted()
+    [1, 2]
+
+Test 12: All negative numbers
+    >>> my_list = MyList()
+    >>> my_list.append(-10)
+    >>> my_list.append(-1)
+    >>> my_list.append(-5)
+    >>> my_list.print_sorted()
+    [-10, -5, -1]
+
