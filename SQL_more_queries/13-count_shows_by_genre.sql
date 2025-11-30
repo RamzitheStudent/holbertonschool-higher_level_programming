@@ -1,3 +1,4 @@
+-- comment
 SELECT
     tg.name AS genre,
     COUNT(tsg.show_id) AS number_of_shows
