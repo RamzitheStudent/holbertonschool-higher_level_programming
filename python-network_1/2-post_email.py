@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-"""Sends a POST request to a URL with an email and displays the response body"""
+"""Sends a POST request to a URL with an email and displays the response body."""
 
-from urllib import request, parse
+from urllib import request
+from urllib import parse
 import sys
 
 if __name__ == "__main__":
