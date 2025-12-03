@@ -1,14 +1,15 @@
 #!/usr/bin/python3
-"""Fetches https://intranet.hbtn.io/status using requests"""
+"""Fetches https://intranet.hbtn.io/status using urllib and prints the body as a string"""
 
-import requests
+from urllib import request
+import sys
 
 if __name__ == "__main__":
     url = "https://intranet.hbtn.io/status"
-    response = requests.get(url)
-    body = response.content
+
+    with request.urlopen(url) as response:
+        body = response.read().decode("utf-8")
 
     print("Body response:")
     print("\t- type: {}".format(type(body)))
     print("\t- content: {}".format(body))
-    print("\t- utf8 content: {}".format(body.decode("utf-8")))
